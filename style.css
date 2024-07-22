@@ -1,0 +1,373 @@
+body{
+    margin: 0%;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 80%;
+    background-color: black;
+    margin: 0%;
+    padding: 10px 10px;
+    width: 100%; 
+    
+}
+@media (max-width:1050px) and (min-width:800px) {
+    header{
+        gap: 70%;
+    }
+}
+@media (max-width:800px) and (min-width:600px){
+    header{
+        gap: 55%;
+    }
+}
+@media (max-width:599px) and (min-width:400px) {
+    header{
+        gap: 45%;
+    }
+}
+@media (max-width:400px) and (min-width:200px) {
+    header{
+        gap: 30%;
+    }
+}
+.topheader a{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    float: left;
+    text-decoration: none;
+    width: 100px;
+    margin: 0%;
+
+    
+
+
+}
+.topheader a img{
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 25px;
+    margin-right: 5px;
+
+}
+
+.topheader a span{
+  margin-top: 5px;
+
+}
+.topheader a:hover{
+    opacity: 0.5;
+}
+
+.topheader div{
+    float: right;
+    margin: 0%;
+    padding: 3px;
+    margin-right: 5%;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.user1{
+    height: 30px;
+    width: 100px;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+}
+.user1 img {
+    float: left;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+   
+    
+
+}
+.user1 span{
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgb(93, 90, 90);
+}
+.topheader div:hover{
+    background-color: #a9a9a9;
+}
+.user1:hover{
+    background-color: #a9a9a9;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+
+    top: 100%; /* Position it below the button */
+    right: 0; /* Align it to the right */
+    
+  }
+#User-dropdown{
+    padding: 20px;
+}
+#User-dropdown:hover{
+    background-color: #f1f1f1;
+}
+.dropdown-content a {
+    width: 100%;
+    color: black;
+    text-decoration: none;
+
+  }
+  
+.dropdown-content a:hover {
+    opacity: 0.5;
+    background-color: #cbc4c4;
+}
+
+.show {
+    display:block;
+}
+
+/*header completed*/
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    overflow-y: scroll;
+    margin-right: 20px;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    border-bottom: black;
+  }
+  
+
+  .sidebar a.add-item {
+    display: flex;
+
+    background-color: white;
+    padding: 5px;
+    margin: 16px;
+    color: black;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  .sidebar a.add-item span{
+    margin-top: 8px;
+  }
+
+  .sidebar .add-item:hover:not(.active) {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+.app{
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+  .sidebar-button{
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    
+  }
+  
+
+  @media screen and (max-width: 700px) {
+ #menu{
+        display: block;
+    }
+.sidebar a {
+
+      float: none;
+      min-width: fit-content;
+    }
+  }
+
+
+
+
+
+
+  @media (max-width:500px) {
+    .sidebar{
+        display: none;
+        width: 100%;
+    }
+    .sidebar-button{
+        display: block;
+
+    }
+  }
+
+
+.plus-logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.side-drop{
+    display: block;
+    position: relative;
+    border-top: solid gray 2px;
+}
+
+.sidedrop{
+    display: none;
+    width: 100%;
+    top: 100%;
+
+}
+.sidedrop>a{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+.dropoption:hover{
+    opacity: 0.5;
+    background-color: #a9a9a9;
+}
+.s{
+    font-size: 25px;
+}
+.s:hover{
+    font-size: 25px;
+}
+/* Content*/
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+    background-color: white;
+    box-shadow: 20px;
+
+
+  }
+
+.profile{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+
+
+}
+
+.profile-pic{
+    width: 250px;
+    border-radius: 100px;
+}
+@media (max-width:600px) {
+    div.content{
+      margin-left: 10px;
+
+    }
+    .profile{
+        flex-direction: column;
+    }
+}
+/* Fetched Data*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  /*edit and delete button */
+  .edit, .save, .delete {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 12px; /* Adjust padding */
+    display: inline-block; /* Ensure they sit in a row */
+    margin: 0 4px; /* Add margin to prevent overlap */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+  .edit{
+
+    background-color: blue;
+
+  }
+  .save{
+
+    background-color: rgb(30, 205, 30);
+
+  }
+
+ .delete{
+
+    background-color: orange;
+
+ }
+.operations{
+    display: flex;
+}
+.buttons{
+    display: inline;
+
+    padding: 7px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.buttons:hover{
+    opacity: 0.5;
+}
+
+.buttons img{
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+
